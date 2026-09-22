@@ -1,0 +1,19 @@
+NOTICE — third-party components shipped with this skill
+========================================================
+
+1. ProPainter (vendored source under third_party/ProPainter)
+   Upstream: https://github.com/sczhou/ProPainter
+   Authors: Shangchen Zhou, Kelvin C.K. Chan, Chongyi Li, Chen Change Loy
+   License: Apache-2.0 (upstream LICENSE included at third_party/ProPainter/LICENSE)
+   Used for: cross-frame video inpainting (flow propagation + transformer completion).
+
+   Official checkpoints downloaded at setup time (not redistributed here):
+   - ProPainter.pth, raft-things.pth, recurrent_flow_completion.pth
+     https://github.com/sczhou/ProPainter/releases (v0.1.0)
+
+2. big-lama (TorchScript port)
+   Original model: "LaMa: Resolution-robust Large Mask Inpainting with Fourier
+   Convolutions" (Suvorov et al., 2021), https://github.com/advimman/lama (Apache-2.0)
+   TorchScript port weights downloaded at setup time (not redistributed here):
+   - lama.pt https://huggingface.co/JosephCatrambone/big-lama-torchscript
+   Used for: fast single-frame inpainting.

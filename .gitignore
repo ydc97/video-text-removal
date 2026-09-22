@@ -1,0 +1,14 @@
+# model weights are downloaded by setup.sh - never commit
+*.pt
+*.pth
+*.bin
+.cache/
+third_party/ProPainter/weights/
+
+# intermediate outputs
+frames/
+results/
+*.mp4
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
